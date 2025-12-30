@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TCM_HIGHLANDER | Links Oficiais</title>
+
+  <style>
+    :root{
+      --bg:#070a0f;
+      --card:#0d121c;
+      --gold:#d4af37;
+      --gold-soft:#b8962e;
+      --border:#1f2937;
+      --text:#e5e7eb;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background:
+        radial-gradient(1200px 500px at top, rgba(212,175,55,.08), transparent 60%),
+        var(--bg);
+      font-family: "Segoe UI", Arial, sans-serif;
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+
+    .card{
+      width:100%;
+      max-width:520px;
+      background:linear-gradient(180deg, #0f1624, var(--card));
+      border:1px solid var(--border);
+      border-radius:22px;
+      padding:28px 22px 26px;
+      box-shadow:
+        0 0 0 1px rgba(212,175,55,.15),
+        0 20px 60px rgba(0,0,0,.6);
+    }
+
+    .avatar{
+      width:96px;
+      height:96px;
+      margin:0 auto 14px;
+      border-radius:22px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      letter-spacing:1px;
+      color:#000;
+      background:
+        linear-gradient(135deg, var(--gold), var(--gold-soft));
+      box-shadow:
+        0 0 0 4px rgba(212,175,55,.15),
+        0 0 30px rgba(212,175,55,.35);
+    }
+
+    h1{
+      margin:6px 0 4px;
+      text-align:center;
+      font-size:22px;
+      letter-spacing:1px;
+    }
+
+    .subtitle{
+      text-align:center;
+      opacity:.8;
+      margin-bottom:22px;
+      font-size:14px;
+    }
+
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      text-decoration:none;
+      color:var(--text);
+      background:#111827;
+      border:1px solid #2b3444;
+      border-radius:16px;
+      padding:15px 16px;
+      margin:12px 0;
+      font-weight:600;
+      letter-spacing:.3px;
+      transition:all .2s ease;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .btn::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(120deg, transparent, rgba(212,175,55,.18), transparent);
+      opacity:0;
+      transition:.2s;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      border-color:var(--gold);
+      box-shadow:0 0 25px rgba(212,175,55,.25);
+    }
+
+    .btn:hover::after{opacity:1}
+
+    .footer{
+      margin-top:18px;
+      text-align:center;
+      font-size:12px;
+      opacity:.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+
+    <!-- INICIAIS / LOGO -->
+    <div class="avatar">TCM</div>
+
+    <h1>TCM_HIGHLANDER</h1>
+    <div class="subtitle">Links Oficiais</div>
+
+    <!-- LINKS -->
+    <a class="btn" href="https://www.youtube.com/@TCM_HIGHLANDER" target="_blank">
+      ▶️ YouTube
+    </a>
+
+    <a class="btn" href="https://web.facebook.com/profile.php?id=61577676963355&locale=pt_BR" target="_blank">
+      📘 Facebook
+    </a>
+
+    <a class="btn" href="https://open.spotify.com/artist/0pcd3wxtrX7WmAzPvB51rm?si=592P-zIKR0a8_mCi_CHceQ" target="_blank">
+      🎧 Spotify
+    </a>
+
+    <div class="footer">
+      © 2025 • TCM • Highlander
+    </div>
+  </div>
+</body>
+</html>
